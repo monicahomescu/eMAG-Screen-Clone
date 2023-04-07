@@ -1,6 +1,6 @@
 # eMAG-Clone
 
-A web document that clones about one screen (hover effects included) of the following web page: http://www.emag.ro/. 
+A web document that clones about one screen (`hover effects` included) of the following web page: http://www.emag.ro/. 
 
 `Original`:
 
