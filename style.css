@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    margin: 0;
+    width:100%;
+    max-width:220vh;
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+}
+
+.firstHeader {
+    display: flex;
+    column-gap: 27.5px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 170px;
+    background-color: white;
+}
+
+.searchInput {
+    width: 100%;
+    background: white;
+    padding-left: 15px;
+    font-size: 18px;
+    outline: thin solid #1D7BDD;
+    border: none;
+    border-radius: 1.3rem;
+}
+
+.searchSubmit {
+    margin-left: -3.5rem;
+    padding-left: 13px;
+    padding-right: 13px;
+    background: none;
+    border: none;
+}
+
+.searchSubmit:hover {
+    cursor: pointer;
+    border-radius: 0px 15.627rem 15.627rem 0px;
+    background: rgba(95, 171, 254, 0.19);
+}
+
+.accountCircle {
+    width: 43px;
+    height: 43px;
+    border-radius: 70%;
+    line-height: 43px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background: #9E31AD;
+    cursor: pointer;
+}
+
+.notificationIcon {
+    position: relative;
+    top: 8px;
+    padding-left: 9px;
+    cursor: pointer;
+}
+
+.notificationBubble {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 21px;
+    height: 21px;
+    border-radius: 70%;
+    line-height: 21px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: #f71b43;
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding-left: 170px;
+    padding-right: 175px;
+    overflow: hidden;
+    background-color: red;
+    background-image: linear-gradient(to right, red , DodgerBlue);
+}
+
+li {
+    float: left;
+    display: block;
+    color: white;
+    font-size: 15.5px;
+    padding: 14px 16px;
+    padding-top: 17px;
+}
+
+li:hover:not(.activeCategory) {
+    outline: 1px solid white;
+    outline-offset: -7px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.activeCategory {
+    color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 14px;
+    padding-right: 10px;
+    background-color: white;
+    cursor: pointer;
+    color: #2C2C2C;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.menuIcon {
+    width: 18px;
+    margin-bottom: -1px;
+    margin-right: 10px;
+}
+
+.arrowIcon {
+    width: 11px;
+    margin-bottom: -1px;
+    margin-left: 5px;
+}
+
+.headphonesIcon {
+    width: 20px;
+    margin-bottom: -5px;
+    margin-right: 10px;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1px;
+}
+
+.productsContainer {
+    color: #2b2b2b;
+    box-shadow: 0px 0px 10px 0px #d6d6d6;
+    clip-path: inset(0px -15px -15px -15px);
+    background-color: white;
+}
+
+.productCategory {
+    height: 46.5px;
+    width: 301px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 6px;
+    font-size: 17px;
+}
+
+.productCategory:hover {
+    cursor: pointer;
+    color: #3b7bc0;
+    box-shadow:0px 0px 0px 1px #f2f2f2 inset;
+}
+
+.productIcon {
+    width: 35px;
+    height: 25px;
+    padding-right: 15px;
+}
+
+.mainAd {
+    width:877px;
+    height:410px;
+    box-shadow: 0 -72px 0 white, 0 76px 0 white;
+}
+
+.next1Icon {
+    position: absolute;
+    width: 25px;
+    left: 20px;
+    bottom: 200px;
+    opacity: 0.6;
+}
+
+.next1Icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.next2Icon {
+    position: absolute;
+    width: 25px;
+    right: 20px;
+    bottom: 200px;
+    opacity: 0.5;
+}
+
+.next2Icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nextContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 175%;
+    padding-top: 20px;
+}
+
+.nextBubble {
+    width: 16px;
+    height: 16px;
+    border: 3px solid #225A87;
+    border-radius: 70%;
+    background: white;
+    margin: 5px;
+}
+
+.nextBubble:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.adsGallery {
+    position: relative;
+    left: 165px;
+    bottom: -15px;
+    height: 240px;
+}
+
+.containerGallery {
+    position: relative;
+    float: left;
+    border: 3px solid #d9d9d9;
+    border-radius: 10%;
+    background-color: white;
+    width: 185px;
+    height: 215px;
+    margin: 6px;
+    padding: 5px;
+}
+
+.imageAd {
+    width: 170px;
+    height: 200px;
+    border-radius: 9%;
+}
+
+.textAd {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 80%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.arrowBubble {
+    position: absolute;
+    top: 79%;
+    left: 75%;
+    width: 24px;
+    height: 24px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+.galleryButton {
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    height: 100px;
+    width: 55px;
+    border: none;
+    border-radius: 5%;
+    background-color: white;
+    color: DodgerBlue;
+    font-size: 40px;
+    transition-duration: 0.3s;
+    opacity: 0.6;
+}
+
+.galleryButton:hover {
+    opacity: 1;
+    cursor: pointer;
+}
